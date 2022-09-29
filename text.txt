@@ -1,0 +1,1 @@
+Skapa "Start New Game btn” och förenkla koden
