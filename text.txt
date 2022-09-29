@@ -1,0 +1,59 @@
+Inlämningsuppgift - Guessing game
+
+
+Instruktioner
+
+I denna inlämningsuppgift ska ni tillsammans i era grupper skapa ett litet spel där användaren ska gissa på ett tal mellan 1 och 100.
+
+Ni ska sedan ge feedback på om användaren har gissat för lågt, för högt eller om det var rätt svar.
+
+
+
+För godkänt ska ni göra följande:
+
+
+
+Generera ett slumpat nummer mellan 1 och 100
+Skapa ett formulär med ett input fält där användaren kan skriva sin gissning och en submit knapp för att skicka in svaret.
+Varje gång formuläret skickas så skall information skrivas ut i consolen om gissningen var korrekt, låg eller hög.
+
+
+För väl godkänt ska ni även göra följande:
+
+
+
+Feedback till spelaren skall skrivas ut på själva hemsidan istället för consolen.
+När man har gissat rätt så skall det skrivas ut hur många försök det tog att gissa rätt.
+Det ska finnas en knapp för att starta om spelet, då ska ett nytt nummer genereras, formuläret tömmas och eventuell feedback försvinna.
+
+Den här gången måste ni även skriva lite HTML för att lösa uppgiften, ett tips är att kolla hur det ser ut på det vi har använt oss av tidigare.
+
+Det finns inga krav på hur det ska se ut utan det är funktionaliteten jag är ute efter. Vill ni försöka lägga in CSS för att det ska se bättre ut så är det helt ok, men inget krav.
+
+
+Tips: När ni har hämtat datan från formuläret, vilken datatyp är den då?
+
+
+INLÄMNING
+
+
+En i er grupp kommer att skapa en repository som ni sedan gemensamt kommer att arbeta i. Inlämningen sker genom att ni skriver namnet på den i er grupp som har gjort repositoryn. Den som har gjort repositoryn lägger in länken till den som en kommentar här under.
+
+
+
+Jag vill även att ni skriver några korta rader om hur grupparbetet fungerade och vad som var eran huvudsakliga uppgift i arbetet.
+
+
+
+
+
+Se till att repositoryn är publik under tiden från att ni lämnar in uppgiften tills att ni har fått ett betyg i ämnet. 
+
+
+
+VIKTIGT! 
+
+Se till att github-länken faktiskt fungerar, att det finns innehåll på repositoryn och att det är tillgängligt. Det är gruppens gemensamma ansvar att kolla detta!
+
+
+////////////////////// SKRIVA /////////////////////////////
