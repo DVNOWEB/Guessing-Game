@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  
   <div class="container col-md-12">
     <div id="read">
       <!--Header-->
@@ -32,23 +33,24 @@
         <br>
         
       </div>
-      <p class="counter-display"></p>
+      <p class="counter-display">Total guesses: 0</p>
     
 
       <div class='resultParas'>
         <p class='guesses'></p>
-        <p class='lastResult'></p>
+        <h2 class='lastResult'></h2>
         <p class='lowOrHi'></p>
         </div>
         <input type='submit' value='Start new game!' class='playAgain'>
         <!--Footer-->
+        
+        <!-- JS koppling-->
+        <script src='app.js'></script>
         <div id='footer'>
           <p>Copyright &copy;
             <script>document.write(new Date().getFullYear())</script> Powered by G2
           </p>
         </div>
-        <!-- JS koppling-->
-        <script src='app.js'></script>
 </body>
 
 </html>

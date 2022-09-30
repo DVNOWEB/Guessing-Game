@@ -1,9 +1,11 @@
+
 body{
+	font-size: 24px;
 	align-content: center;
 	font-family: san-sarif;
 	  text-align: center;
-	min-width: 80%;
-	min-height: 100%;
+	max-width: 50%;
+	max-height: 100%;
 	  margin: 0 auto;
   }
   .head{
@@ -13,7 +15,7 @@ body{
   #footer{
 	  position: fixed;
 	  height: 10px;
-	  width: 100%;
+	  width: 50%;
 	  clear: both;
 	  bottom: 10%;
 	  font-size: 16px;
@@ -22,4 +24,7 @@ body{
    margin-top: 20px;
    padding: 20px;
    }
+  h2{
+	color: white;
+  }
   
