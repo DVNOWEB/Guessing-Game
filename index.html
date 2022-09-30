@@ -10,9 +10,40 @@
 </head>
 
 <body>
-  <h1>Guessing Game</h1>
+  <div class="container col-md-12">
+    <div id="read">
+      <!--Header-->
+      <h1 class='head'>Guessing Game G2</h1>
 
-  <script src="app.js"></script>
+      <!--Body-->
+      <p>We have selected a random number between 1 and 100. <!--See if you can guess it in 10 turns or fewer. We'll tell
+        you if
+        your guess was too high or too low.-->
+        <br><br>
+        The game ends when your guess is same as the choosen random number or when you have exceeded your ten rounds.
+        <br><br>
+        <b>Goodluck!</b>
+      </p>
+
+      <div class='form'>
+        <label for='guessField'>Enter a guess: </label><input type='text' id='guessField' class='guessField'
+          placeholder='example: 13'>
+        <input type='submit' value='Submit guess' class='guessSubmit'>
+      </div>
+
+      <div class='resultParas'>
+        <p class='guesses'></p>
+        <p class='lastResult'></p>
+        <p class='lowOrHi'></p>
+
+        <!--Footer-->
+        <div id='footer'>
+          <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script> Powered by G2
+          </p>
+        </div>
+        <!-- JS koppling-->
+        <script src='app.js'></script>
 </body>
 
 </html>
