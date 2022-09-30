@@ -5,28 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS koppling-->
   <link rel="stylesheet" href="style.css">
   <title>Guessing Game by G2</title>
 </head>
 
 <body>
+  <div class="container col-md-12">
+    <div id="read">
+      <!--Header-->
+      <h1 class='head'>Guessing Game 2</h1>
 
-  <h1>Guessing Game</h1>
+      <!--Body-->
+      <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell
+        you if
+        your guess was too high or too low.
+        <br><br>
+        The game ends when your guess is same as the choosen random number or when you have exceeded your ten rounds.
+        <br><br>
+        <b>Goodluck!</b>
+      </p>
 
-  <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if
-    your guess was too high or too low.</p>
+      <div class='form'>
+        <label for='guessField'>Enter a guess: </label><input type='text' id='guessField' class='guessField'
+          placeholder='example: 13'>
+        <input type='submit' value='Submit guess' class='guessSubmit'>
+      </div>
 
-  <div class="form">
-    <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-    <input type="submit" value="Submit guess" class="guessSubmit">
-  </div>
+      <div class='resultParas'>
+        <p class='guesses'></p>
+        <p class='lastResult'></p>
+        <p class='lowOrHi'></p>
 
-  <div class="resultParas">
-    <p class="guesses"></p>
-    <p class="lastResult"></p>
-    <p class="lowOrHi"></p>
-
-    <script src="app.js"></script>
+        <!--Footer-->
+        <div id='footer'>
+          <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script> Powered by G2
+          </p>
+        </div>
+        <!-- JS koppling-->
+        <script src='app.js'></script>
 </body>
 
 </html>

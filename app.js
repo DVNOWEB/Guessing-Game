@@ -3,7 +3,6 @@ const randomNumber = Math.floor(Math.random() * 100) + 1;
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
-
 const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 
@@ -15,12 +14,12 @@ function checkGuess() {
   guesses.textContent += userGuess + ' ';
 
   if (userGuess == randomNumber) {
-    // put all the right guess code in here
+    // rätt gissningskod här
     lastResult.textContent = 'You are right! You read my mind!';
     lastResult.style.backgroundColor = 'green';
     gameOver();
   } else {
-    // put all the wrong guess code in here
+    // fel gissningskod här
     lastResult.textContent = 'Wrong!';
     lastResult.style.backgroundColor = 'red';
     if (userGuess > randomNumber) {
