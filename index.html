@@ -20,7 +20,7 @@
         you if
         your guess was too high or too low.-->
         <br><br>
-        The game ends when your guess is same as the choosen random number or when you have exceeded your ten rounds.
+        You win by guessing the correct number, try to get it in as few tries as possible!
         <br><br>
         <b>Goodluck!</b>
       </p>
@@ -29,13 +29,18 @@
         <label for='guessField'>Enter a guess: </label><input type='text' id='guessField' class='guessField'
           placeholder='example: 13'>
         <input type='submit' value='Submit guess' class='guessSubmit'>
+        <br>
+        
       </div>
+      <p class="counter-display"></p>
+    
 
       <div class='resultParas'>
         <p class='guesses'></p>
         <p class='lastResult'></p>
         <p class='lowOrHi'></p>
-
+        </div>
+        <input type='submit' value='Start new game!' class='playAgain'>
         <!--Footer-->
         <div id='footer'>
           <p>Copyright &copy;
