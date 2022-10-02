@@ -1,5 +1,9 @@
 const randomNumber = Math.floor(Math.random() * 100) + 1;
+/*
+Document.querySelector()
 
+The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.
+*/
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 
@@ -45,7 +49,7 @@ function checkGuess() {
   }
 
   guessField.value = '';
-
+  guessField.focus();
   counterDisplay.innerHTML = 'Total guesses: ' + count;
 }
 guessSubmit.addEventListener('click', checkGuess);
