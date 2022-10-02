@@ -12,7 +12,7 @@ let resetButton;
 
 function checkGuess(){
 	const userGuess = Number(guessField.value);
-	if (guessCount === 1){
+	if (guessCount == 1){
 		guesses.textContent = 'Previous guesses: ';
 	}
 	guesses.textContent += userGuess + ', ';
@@ -24,7 +24,7 @@ function checkGuess(){
 		setGameOver();
 	}
   
-  else if (guessCount === 10){
+  else if (guessCount == 10){
 		lastResult.textContent = '!!!GAME OVER!!!';
 		setGameOver();
 	}
