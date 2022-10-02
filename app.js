@@ -8,28 +8,25 @@ const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 const playAgain = document.querySelector('.playAgain');
 let counterDisplay = document.querySelector('.counter-display');
-let count= 0;
-guesses.textContent = 'Previous guesses: '
+let count = 0;
+guesses.textContent = 'Previous guesses: ';
 
-
-function restart(){
+function restart() {
   location.reload();
 }
 
 function checkGuess() {
   const userGuess = Number(guessField.value);
-  
-  if (userGuess < 1  || userGuess > 100){
+
+  if (userGuess < 1 || userGuess > 100) {
     lastResult.textContent = 'You need to submit a number 1-100!';
     lastResult.style.backgroundColor = 'red';
-  }
-
-  else if (userGuess == randomNumber) {
+  } else if (userGuess == randomNumber) {
     // rätt gissningskod här
     lastResult.textContent = 'You are right! You read my mind!';
     lastResult.style.backgroundColor = 'green';
     guesses.textContent += userGuess + ', ';
-    count ++;
+    count++;
   } else if (userGuess >= 1 && userGuess <= 100) {
     // fel gissningskod här
     lastResult.textContent = 'Wrong!';
@@ -41,18 +38,15 @@ function checkGuess() {
     } else if (userGuess < randomNumber) {
       lowOrHi.textContent = 'Your guess was too low';
     }
-    count ++;
-  }
-  else {
+    count++;
+  } else {
     lastResult.textContent = 'Please enter a NUMBER 1-100';
     lastResult.style.backgroundColor = 'red';
   }
 
-  
-  
   guessField.value = '';
-  
-  counterDisplay.innerHTML ="Total guesses: " + count;
+
+  counterDisplay.innerHTML = 'Total guesses: ' + count;
 }
 guessSubmit.addEventListener('click', checkGuess);
-playAgain.addEventListener('click', restart)
+playAgain.addEventListener('click', restart);
