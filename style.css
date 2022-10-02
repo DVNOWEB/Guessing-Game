@@ -27,3 +27,16 @@ p.lastResult {
   font-size: 24px;
   color: white;
 }
+.guessField{
+  font-size: 14px;
+}
+.guessSubmit{
+  background-color: green;
+  color: white;
+  font-size: 14px;
+}
+.playAgain{
+  background-color: green;
+  color: white;
+  font-size: 14px;
+}
