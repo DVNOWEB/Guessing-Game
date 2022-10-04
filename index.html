@@ -13,18 +13,18 @@
 
   <div class="container col-md-12">
     <div id="read">
-      <!--Header-->
+
       <h1 class='head'>Guessing Game G2</h1>
 
-      <!--Body-->
       <p>We have selected a random number between 1 and 100.
-        <!--See if you can guess it in 10 turns or fewer. We'll tell
-        you if
-        your guess was too high or too low.-->
+
         <br><br>
         You win by guessing the correct number, try to get it in as few tries as possible!
         <br><br>
-        <b>Goodluck!</b>
+      <p class="myLuck" id="myLuck">Goodluck!</p>
+      <p class="smile" id="smile">
+        🤔
+      </p>
       </p>
 
       <div class='form'>
@@ -43,9 +43,7 @@
         <p class='lowOrHi'></p>
       </div>
       <input type='submit' value='Start new game!' class='playAgain'>
-      <!--Footer-->
 
-      <!-- JS koppling-->
       <script src='app.js'></script>
       <div id='footer'>
         <p>Copyright &copy;
