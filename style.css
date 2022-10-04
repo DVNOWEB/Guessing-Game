@@ -23,7 +23,7 @@ body {
   margin-top: 20px;
   padding: 20px;
 }
-p.lastResult {
+.lastResult {
   font-size: 24px;
   color: white;
 }
