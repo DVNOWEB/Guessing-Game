@@ -44,11 +44,11 @@ function checkGuess() {
 
     if (userGuess > randomNumber) {
       document.getElementById('myLuck').innerHTML = 'Too high! You are almost there';
-      document.getElementById('smile').innerHTML = '⬆️';
+      document.getElementById('smile').innerHTML = '🙃';
       lowOrHi.textContent = 'Your guess was too high';
     } else if (userGuess < randomNumber) {
       document.getElementById('myLuck').innerHTML = `Too low! It's starting to get hot here`;
-      document.getElementById('smile').innerHTML = '⬇️';
+      document.getElementById('smile').innerHTML = '😅';
       lowOrHi.textContent = 'Your guess was too low';
     }
     count++;
