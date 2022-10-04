@@ -1,18 +1,14 @@
 const randomNumber = Math.floor(Math.random() * 100) + 1;
-/*
-Document.querySelector()
-
-The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.
-*/
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
-
 const lowOrHi = document.querySelector('.lowOrHi');
 const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 const playAgain = document.querySelector('.playAgain');
+
 let counterDisplay = document.querySelector('.counter-display');
 let count = 0;
+
 guesses.textContent = 'Previous guesses: ';
 
 function restart() {
@@ -21,8 +17,8 @@ function restart() {
 
 function checkGuess() {
   const userGuess = Number(guessField.value);
-  
-  if (userGuess < 1  || userGuess > 100){
+
+  if (userGuess < 1 || userGuess > 100) {
     lastResult.textContent = 'You need to submit a number 1-100!';
     lastResult.style.backgroundColor = 'red';
   }
