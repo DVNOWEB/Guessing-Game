@@ -15,14 +15,16 @@
     <div id="read">
 
       <h1 class='head'>Guessing Game G2</h1>
-      
+
       <p>We have selected a random number between 1 and 100.
-        <br>
-        <br>
+
+        <br><br>
         You win by guessing the correct number, try to get it in as few tries as possible!
-        <br>
-        <br>
-        <b>Goodluck!</b>
+        <br><br>
+      <p class="myLuck" id="myLuck">Goodluck!</p>
+      <p class="smile" id="smile">
+        🤔
+      </p>
       </p>
 
       <div class='form'>
@@ -30,13 +32,16 @@
         <input type='number' id='guessField' class='guessField' placeholder='example: 13'>
         <input type='submit' value='Submit guess' class='guessSubmit'>
         <br>
+
+        <p class="counter-display">Total guesses: 0</p>
       </div>
-      <p class="counter-display">Total guesses: 0</p>
+
+
       <div class='resultParas'>
         <p class='guesses'></p>
-        <h2 class='lastResult'></h2>
-        <p class='lowOrHi'></p>
+        <p class='lastResult'></p>
       </div>
+      
       <input type='submit' value='Start new game!' class='playAgain'>
 
       <script src='app.js'></script>
